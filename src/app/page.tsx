@@ -1,65 +1,118 @@
-import Image from "next/image";
+import MasinaSvg from "@/app/components/MasinaSvg";
+import { qaData } from "@/app/data/qaData";
+import QAItem from "@/app/components/QAItem";
+import { galleryData } from "@/app/data/galleryData";
+import GalleryItem from "@/app/components/GalleryItem";
+import PhoneSvg from "@/app/components/PhoneSvg";
+import ViberSvg from "@/app/components/ViberSvg";
+import FacebookSvg from "@/app/components/FacebookSvg";
 
-export default function Home() {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
-  );
+
+export default function Page(){
+    return (
+        <>
+            <section id="hero" className="max-w-7xl mx-auto w-full flex flex-col justify-center items-center px-4 py-8 md:py-16">
+
+                <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
+                    <p className='text-3xl md:text-4xl text-spaceIndigo font-bold'>Glazure Cubak</p>
+                    <a className='text-xl md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
+                        Pozovi nas
+                    </a>
+                </div>
+
+                <div className='flex flex-col md:flex-row justify-between items-center gap-8 mt-4 md:mt-8'>
+                    <div className="flex gap-4 flex-col items-center md:items-start justify-center max-w-2xl">
+                        <h1 className="text-4xl md:text-6xl font-bold text-center md:text-left text-spaceIndigo leading-tight">Vaš Partner za Savršeno Ravne Podove</h1>
+                        <p className="text-2xl md:text-3xl text-center md:text-left text-bronze">Mašinska izrada podnih glazura</p>
+                    </div>
+
+                    <div className="w-[286px] h-[209px] md:w-full md:h-auto max-w-md md:max-w-xl">
+                        <MasinaSvg className="w-full h-full" />
+                    </div>
+                </div>
+
+                <a className='mt-12 text-xl md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
+                    Kontaktiraj nas
+                </a>
+
+            </section>
+            <section id="about" className="mt-12 md:mt-24 max-w-5xl mx-auto w-full flex flex-col justify-center items-center px-4">
+
+                <div className='w-full'>
+                    <h1 className='text-spaceIndigo text-2xl md:text-4xl text-center leading-relaxed'>
+                        Izrada podnih glazura ili estrich-a sa vise od 20 godina iskustva u tom polju
+                    </h1>
+                </div>
+
+            </section>
+
+
+
+            <section id="qa" className="mt-20 md:mt-32 max-w-4xl w-full mx-auto px-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-center text-spaceIndigo mb-10 md:mb-16">Često postavljana pitanja</h2>
+                <div className="flex flex-col gap-2">
+                    {qaData.map((item) => (
+                        <QAItem key={item.id} item={item} />
+                    ))}
+                </div>
+            </section>
+
+            <section id="gallery" className="mt-24 md:mt-40 w-full py-16 md:py-24 bg-[#F7FCF7]">
+                <div className="max-w-7xl mx-auto px-4 overflow-hidden">
+                    <h2 className="text-3xl md:text-4xl font-bold text-center text-spaceIndigo mb-4">
+                        Galerija završenih projekata
+                    </h2>
+                    <p className="text-lg md:text-xl text-center text-bronze mb-12 md:mb-16 font-bold max-w-2xl mx-auto">
+                        Jedan od većih projekata je i Nova Bolnica u Trebinju
+                    </p>
+
+                    <div className="flex overflow-x-auto gap-4 md:gap-8 pb-8 scroll-smooth no-scrollbar snap-x snap-mandatory px-2">
+                        {galleryData.map((image) => (
+                            <div key={image.id} className="snap-center">
+                                <GalleryItem item={image} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section id='contact' className='mt-24 md:mt-40 w-full py-16 md:py-24'>
+                <div className='flex flex-col justify-center items-center mt-3 gap-8 max-w-7xl'>
+
+                    <div className='text-center flex flex-col justify-between gap-4'>
+                        <h1 className='text-3xl text-bronze font-bold'>
+                            Kontaktirajte Nas
+                        </h1>
+
+                        <p className='text-2xl text-spaceIndigo'>
+                            Za besplatnu procenu ili dodatne informacije, slobodno nas kontaktirajte putem telefona .
+                        </p>
+
+                    </div>
+
+                    <div className='flex flex-col gap-6 items-start justify-center max-w-[350px]'>
+
+                        <div className='flex flex-row items-center justify-start gap-3 w-fit'>
+                            <PhoneSvg/>
+                            <p className='text-2xl text-spaceIndigo'>065 921 847</p>
+                        </div>
+
+                        <div className='flex flex-row items-center justify-start gap-3 w-fit'>
+                            <ViberSvg/>
+                            <p className='text-2xl text-spaceIndigo'>065 921 847</p>
+                        </div>
+
+                        <div className='flex flex-row items-center justify-start gap-3 w-fit'>
+                            <FacebookSvg/>
+                            <p className='text-2xl text-spaceIndigo'>Glazure Estrih Cubak</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </section>
+
+        </>
+    )
 }
