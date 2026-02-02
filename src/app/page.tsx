@@ -94,22 +94,22 @@ export default function Page(){
 
                         <div>
                             <a href="tel:+38765921847" className='flex flex-row items-center justify-start gap-3 w-fit'>
-                                <PhoneSvg/>
-                                <p className='text-2xl text-spaceIndigo'>065 921 847</p>
+                                <PhoneSvg className="w-8 h-8 md:w-10 md:h-10" />
+                                <p className='text-xl md:text-2xl text-spaceIndigo'>065 921 847</p>
                             </a>
                         </div>
 
                         <div>
                             <a href="viber://chat?number=38765921847" className='flex flex-row items-center justify-start gap-3 w-fit'>
-                                <ViberSvg/>
-                                <p className='text-2xl text-spaceIndigo'>065 921 847</p>
+                                <ViberSvg className="w-8 h-8 md:w-10 md:h-10" />
+                                <p className='text-xl md:text-2xl text-spaceIndigo'>065 921 847</p>
                             </a>
                         </div>
 
                         <div>
                             <a href="https://www.facebook.com/glazureestrih.cubak/" className='flex flex-row items-center justify-start gap-3 w-fit'>
-                                <FacebookSvg/>
-                                <p className='text-2xl text-spaceIndigo'>Glazure Estrich Cubak</p>
+                                <FacebookSvg className="w-8 h-8 md:w-10 md:h-10" />
+                                <p className='text-xl md:text-2xl text-spaceIndigo'>Glazure Estrich Cubak</p>
                             </a>
                         </div>
 

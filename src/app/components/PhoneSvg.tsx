@@ -4,8 +4,7 @@ import { JSX } from "react/jsx-runtime"
 const SvgComponent = (props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width={100}
-        height={100}
+        viewBox="0 0 100 100"
         fill="none"
         {...props}
     >
