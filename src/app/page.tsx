@@ -13,9 +13,9 @@ export default function Page(){
         <>
             <section id="hero" className="max-w-7xl mx-auto w-full flex flex-col justify-center items-center px-4 py-8 md:py-16">
 
-                <div className="w-full flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
-                    <p className='text-3xl md:text-4xl text-spaceIndigo font-bold'>Glazure Cubak</p>
-                    <a className='text-xl md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
+                <div className="w-full flex flex-row md:flex-row justify-between items-center gap-1 md:gap-6 mb-12">
+                    <p className='text-[16px] md:text-4xl text-spaceIndigo font-bold'>Glazure Cubak</p>
+                    <a className='text-[16px] md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
                         Pozovi nas
                     </a>
                 </div>
@@ -31,7 +31,7 @@ export default function Page(){
                     </div>
                 </div>
 
-                <a className='mt-12 text-xl md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
+                <a className='mt-12 text-[16px] md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
                     Kontaktiraj nas
                 </a>
 
