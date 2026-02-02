@@ -15,7 +15,7 @@ export default function Page(){
 
                 <div className="w-full flex flex-row md:flex-row justify-between items-center gap-1 md:gap-6 mb-12">
                     <p className='text-[16px] md:text-4xl text-spaceIndigo font-bold'>Glazure Cubak</p>
-                    <a className='text-[16px] md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
+                    <a href="tel:+38765921847" className='text-[16px] md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
                         Pozovi nas
                     </a>
                 </div>
@@ -31,7 +31,7 @@ export default function Page(){
                     </div>
                 </div>
 
-                <a className='mt-12 text-[16px] md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
+                <a href='#contact' className='mt-12 text-[16px] md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 hover:bg-opacity-90 transition-all cursor-pointer'>
                     Kontaktiraj nas
                 </a>
 
@@ -92,19 +92,25 @@ export default function Page(){
 
                     <div className='flex flex-col gap-6 items-start justify-center max-w-[350px]'>
 
-                        <div className='flex flex-row items-center justify-start gap-3 w-fit'>
-                            <PhoneSvg/>
-                            <p className='text-2xl text-spaceIndigo'>065 921 847</p>
+                        <div>
+                            <a href="tel:+38765921847" className='flex flex-row items-center justify-start gap-3 w-fit'>
+                                <PhoneSvg/>
+                                <p className='text-2xl text-spaceIndigo'>065 921 847</p>
+                            </a>
                         </div>
 
-                        <div className='flex flex-row items-center justify-start gap-3 w-fit'>
-                            <ViberSvg/>
-                            <p className='text-2xl text-spaceIndigo'>065 921 847</p>
+                        <div>
+                            <a href="viber://chat?number=38765921847" className='flex flex-row items-center justify-start gap-3 w-fit'>
+                                <ViberSvg/>
+                                <p className='text-2xl text-spaceIndigo'>065 921 847</p>
+                            </a>
                         </div>
 
-                        <div className='flex flex-row items-center justify-start gap-3 w-fit'>
-                            <FacebookSvg/>
-                            <p className='text-2xl text-spaceIndigo'>Glazure Estrih Cubak</p>
+                        <div>
+                            <a href="https://www.facebook.com/glazureestrih.cubak/" className='flex flex-row items-center justify-start gap-3 w-fit'>
+                                <FacebookSvg/>
+                                <p className='text-2xl text-spaceIndigo'>Glazure Estrich Cubak</p>
+                            </a>
                         </div>
 
 
