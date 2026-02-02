@@ -15,14 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Glazure Čubak | Mašinska Izrada Podnih Glazura i Estriha",
+  title: "Glazure Cubak | Mašinska Izrada Podnih Glazura i Estriha",
   description: "Vrhunska izrada mašinskih podnih glazura i estriha sa preko 20 godina iskustva. Profesionalni tim, savršeno ravni podovi za vaš dom ili poslovni prostor.",
-  keywords: ["mašinske glazure", "estrih", "podne glazure", "izravnavanje podova", "Glazure Čubak", "gradnja", "podovi"],
+  keywords: ["mašinske glazure", "estrih", "podne glazure", "izravnavanje podova", "Glazure Cubak", "gradnja", "podovi","hidroizolacija", "izolacija", "izrada podova", "mašinska izrada", "podovi za gradnju", "vrhunska izrada podova"],
   openGraph: {
-    title: "Glazure Čubak | Mašinska Izrada Podnih Glazura",
+    title: "Glazure Cubak | Mašinska Izrada Podnih Glazura",
     description: "Profesionalna izrada podnih glazura sa preko 20 godina iskustva.",
     url: "https://glazurecubak.com",
-    siteName: "Glazure Čubak",
+    siteName: "Glazure Cubak",
     locale: "sr_RS",
     type: "website",
   },
