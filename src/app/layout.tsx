@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Glazure Cubak | Mašinska Izrada Podnih Glazura i Estriha",
-  description: "Vrhunska izrada mašinskih podnih glazura i estriha sa preko 20 godina iskustva. Profesionalni tim, savršeno ravni podovi za vaš dom ili poslovni prostor.",
-  keywords: ["mašinske glazure", "estrih", "podne glazure", "izravnavanje podova", "Glazure Cubak", "gradnja", "podovi","hidroizolacija", "izolacija", "izrada podova", "mašinska izrada", "podovi za gradnju", "vrhunska izrada podova"],
+  title: "Glazure Cubak | Mašinska Izrada Podnih Glazura ili Estriha",
+  description: "Vrhunska izrada mašinskih podnih glazura ili estriha sa preko 20 godina iskustva. Profesionalni tim, savršeno ravni podovi za vaš dom ili poslovni prostor.",
+  keywords: ["mašinske glazure","glazure banja luka", "estrih","estrih banja luka", "podne glazure", "izravnavanje podova", "Glazure Cubak", "gradnja", "podovi","hidroizolacija", "izolacija", "izrada podova", "mašinska izrada", "podovi za gradnju", "vrhunska izrada podova","Glazure BanjaLuka" ,"glazura Kotor Varos","glazura Celinac","glazura Gradiska","glazura Laktasi"],
   openGraph: {
-    title: "Glazure Cubak | Mašinska Izrada Podnih Glazura",
-    description: "Profesionalna izrada podnih glazura sa preko 20 godina iskustva.",
+    title: "Glazure Cubak | Mašinska Izrada Podnih Glazura ili Estriha",
+    description: "Profesionalna izrada podnih glazura ili estriha sa preko 20 godina iskustva.",
     url: "https://glazurecubak.com",
     siteName: "Glazure Cubak",
     locale: "sr_RS",
