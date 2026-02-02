@@ -9,8 +9,26 @@ import FacebookSvg from "@/app/components/FacebookSvg";
 
 
 export default function Page(){
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Glazure Čubak",
+        "description": "Mašinska izrada podnih glazura sa preko 20 godina iskustva.",
+        "telephone": "+38765921847",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Trebinje",
+            "addressCountry": "BA"
+        },
+        "url": "https://glazurecubak.com"
+    };
+
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <section id="hero" className="max-w-7xl mx-auto w-full flex flex-col justify-center items-center px-4 py-8 md:py-16">
 
                 <div className="w-full flex flex-row md:flex-row justify-between items-center gap-1 md:gap-6 mb-12">
@@ -39,9 +57,9 @@ export default function Page(){
             <section id="about" className="mt-12 md:mt-24 max-w-5xl mx-auto w-full flex flex-col justify-center items-center px-4">
 
                 <div className='w-full'>
-                    <h1 className='text-spaceIndigo text-2xl md:text-4xl text-center leading-relaxed'>
+                    <h2 className='text-spaceIndigo text-2xl md:text-4xl text-center leading-relaxed font-bold'>
                         Izrada podnih glazura ili estrich-a sa vise od 20 godina iskustva u tom polju
-                    </h1>
+                    </h2>
                 </div>
 
             </section>
@@ -80,9 +98,9 @@ export default function Page(){
                 <div className='flex flex-col justify-center items-center mt-3 gap-8 max-w-7xl'>
 
                     <div className='text-center flex flex-col justify-between gap-4'>
-                        <h1 className='text-3xl text-bronze font-bold'>
+                        <h2 className='text-3xl text-bronze font-bold'>
                             Kontaktirajte Nas
-                        </h1>
+                        </h2>
 
                         <p className='text-2xl text-spaceIndigo'>
                             Za besplatnu procenu ili dodatne informacije, slobodno nas kontaktirajte putem telefona .
