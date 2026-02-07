@@ -17,7 +17,7 @@ export default function Page(){
         "telephone": "+38765921847",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Trebinje",
+            "addressLocality": "Banja Luka",
             "addressCountry": "BA"
         },
         "url": "https://glazurecubak.com"
@@ -58,7 +58,7 @@ export default function Page(){
 
                 <div className='w-full'>
                     <h2 className='text-spaceIndigo text-2xl md:text-4xl text-center leading-relaxed font-bold'>
-                        Izrada podnih glazura ili estrich-a sa vise od 20 godina iskustva u tom polju
+                        Izrada podnih glazura , estrich-a ili cementne kosuljice sa vise od 20 godina iskustva . Regija Banja Luka i dalje .
                     </h2>
                 </div>
 
