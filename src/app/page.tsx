@@ -67,10 +67,10 @@ export default function Page(){
                         Izrada podnih glazura , estrich-a ili cementne kosuljice sa vise od 20 godina iskustva . Regija Banja Luka i dalje .
                     </h2>
                     <h3 className='text-spaceIndigo text-xl md:text-2xl text-center leading-relaxed font-semibold mt-6'>
-                        Podne glazure u Banja Luki, Kotor Varošu, Celincu i Laktasima
+                        Podne glazure u Banja Luci, Kotor Varošu, Celincu i Laktasima
                     </h3>
                     <p className='text-bronze text-lg md:text-xl text-center mt-4'>
-                        Pružamo usluge mašinskih glazura i estriha na području Banja Luke, Kotor Varoša, Celinca, Laktasa i šire regije.
+                        Pružamo usluge mašinskih glazura i estriha na području Banja Luke, Kotor Varoša, Knezeva , Celinca, Laktasa i šire regije.
                     </p>
                 </div>
 
