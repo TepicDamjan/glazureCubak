@@ -20,7 +20,13 @@ export default function Page(){
             "addressLocality": "Banja Luka",
             "addressCountry": "BA"
         },
-        "url": "https://glazurecubak.com"
+        "url": "https://glazurecubak.com",
+        "areaServed": [
+            { "@type": "City", "name": "Banja Luka" },
+            { "@type": "City", "name": "Kotor Varoš" },
+            { "@type": "City", "name": "Celinac" },
+            { "@type": "City", "name": "Laktasi" }
+        ]
     };
 
     return (
@@ -60,6 +66,12 @@ export default function Page(){
                     <h2 className='text-spaceIndigo text-2xl md:text-4xl text-center leading-relaxed font-bold'>
                         Izrada podnih glazura , estrich-a ili cementne kosuljice sa vise od 20 godina iskustva . Regija Banja Luka i dalje .
                     </h2>
+                    <h3 className='text-spaceIndigo text-xl md:text-2xl text-center leading-relaxed font-semibold mt-6'>
+                        Podne glazure u Banja Luki, Kotor Varošu, Celincu i Laktasima
+                    </h3>
+                    <p className='text-bronze text-lg md:text-xl text-center mt-4'>
+                        Pružamo usluge mašinskih glazura i estriha na području Banja Luke, Kotor Varoša, Celinca, Laktasa i šire regije.
+                    </p>
                 </div>
 
             </section>

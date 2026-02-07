@@ -16,12 +16,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://glazurecubak.com"),
   title: "Glazure Cubak | Mašinska Izrada Podnih Glazura ili Estriha | Banja Luka",
-  description: "Vrhunska izrada mašinskih podnih glazura ili estriha sa preko 20 godina iskustva. Profesionalni tim, savršeno ravni podovi za vaš dom ili poslovni prostor.Na regiji Banja Luke i dalje",
-  keywords: ["mašinske glazure","glazure banja luka", "estrih","estrih banja luka", "podne glazure", "izravnavanje podova", "Glazure Cubak", "gradnja", "podovi","hidroizolacija", "izolacija", "izrada podova", "mašinska izrada", "podovi za gradnju", "vrhunska izrada podova","Glazure BanjaLuka" ,"glazura Kotor Varos","glazura Celinac","glazura Gradiska","glazura Laktasi"],
+  description: "Vrhunska izrada mašinskih podnih glazura ili estriha sa preko 20 godina iskustva. Profesionalni tim, savršeno ravni podovi za vaš dom ili poslovni prostor. Na području Banja Luke, Kotor Varoša, Celinca, Laktasa i šire.",
+  keywords: [
+    "mašinske glazure", "glazure banja luka", "glazure Kotor Varos", "glazure Celinac", "glazure Laktasi",
+    "estrih", "estrih banja luka", "podne glazure", "izravnavanje podova", "Glazure Cubak", "gradnja", "podovi",
+    "hidroizolacija", "izolacija", "izrada podova", "mašinska izrada", "podovi za gradnju", "vrhunska izrada podova",
+    "glazura Banja Luka", "glazura Kotor Varos", "glazura Celinac", "glazura Gradiška", "glazura Laktasi",
+  ],
   openGraph: {
     title: "Glazure Cubak | Mašinska Izrada Podnih Glazura ili Estriha | Banja Luka",
-    description: "Profesionalna izrada podnih glazura ili estriha sa preko 20 godina iskustva. Na regiji Banja Luke i dalje",
+    description: "Profesionalna izrada podnih glazura ili estriha sa preko 20 godina iskustva. Banja Luka, Kotor Varoš, Celinac, Laktasi i šira regija.",
     url: "https://glazurecubak.com",
     siteName: "Glazure Cubak",
     locale: "sr_RS",
