@@ -7,6 +7,10 @@ export interface GalleryImage {
 }
 
 export const galleryData: GalleryImage[] = [
+  { id: 27, src: "/images/01.jpg", alt: "Mašinska glazura, Glazure Cubak" },
+  { id: 28, src: "/images/02.jpg", alt: "Mašinska glazura, Glazure Cubak" },
+  { id: 29, src: "/images/03.jpg", alt: "Mašinska glazura, Glazure Cubak" },
+  { id: 30, src: "/images/04.jpg", alt: "Mašinska glazura, Glazure Cubak" },
   { id: 1, src: "/images/1.webp", alt: "Podna glazura, Nova Bolnica Trebinje", title: "Nova Bolnica Trebinje" },
   { id: 2, src: "/images/2.webp", alt: "Mašinska glazura, Banja Luka" },
   { id: 3, src: "/images/3.webp", alt: "Podna glazura, Koricani" },
