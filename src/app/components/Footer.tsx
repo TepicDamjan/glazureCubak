@@ -35,7 +35,14 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 mt-6 flex flex-col items-center gap-1 text-center">
-        <p className="text-sm md:text-base text-bronze">Designed and made by DT.</p>
+        <a
+          href="https://damjantepic.me"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-sm md:text-base text-bronze hover:underline transition-colors"
+        >
+          Designed and made by DT.
+        </a>
         <p className="text-xs md:text-sm text-spaceIndigo/70">
           Copyright {year} Zoran Tepić. All rights reserved.
         </p>
