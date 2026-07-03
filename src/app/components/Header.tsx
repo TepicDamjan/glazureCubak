@@ -43,7 +43,7 @@ export default function Header() {
           <motion.a
             {...hoverTap}
             href="tel:+38765921847"
-            className="text-sm md:text-lg text-mintGrand bg-granite rounded-lg px-3 py-2 md:px-4 md:py-3 hover:bg-opacity-90 transition-all"
+            className="hidden md:inline-flex text-sm md:text-lg text-mintGrand bg-granite rounded-lg px-3 py-2 md:px-4 md:py-3 hover:bg-opacity-90 transition-all"
           >
             Pozovi nas
           </motion.a>

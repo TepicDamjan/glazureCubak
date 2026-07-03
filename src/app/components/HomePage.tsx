@@ -1,16 +1,17 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import MasinaSvg from "@/app/components/MasinaSvg";
+import HeroSection from "@/app/components/HeroSection";
 import { qaData } from "@/app/data/qaData";
 import QAItem from "@/app/components/QAItem";
 import GallerySection from "@/app/components/GallerySection";
+import VideoSection from "@/app/components/VideoSection";
 import PhoneSvg from "@/app/components/PhoneSvg";
 import ViberSvg from "@/app/components/ViberSvg";
 import FacebookSvg from "@/app/components/FacebookSvg";
 import WhatsAppSvg from "@/app/components/WhatsAppSvg";
 import FloatingCallButton from "@/app/components/FloatingCallButton";
-import { getFadeInView, getFadeUp, getHoverTap } from "@/app/lib/motion";
+import { getFadeInView } from "@/app/lib/motion";
 
 const processSteps = [
   {
@@ -37,47 +38,12 @@ const processSteps = [
 
 export default function HomePage() {
   const reduceMotion = useReducedMotion();
-  const hoverTap = getHoverTap(reduceMotion);
 
   return (
     <>
       <FloatingCallButton />
 
-      <section id="hero" className="max-w-7xl mx-auto w-full flex flex-col justify-center items-center px-4 py-8 md:py-16">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8 mt-4 md:mt-8 w-full">
-          <motion.div
-            {...getFadeUp(reduceMotion, 0.2)}
-            className="flex gap-4 flex-col items-center md:items-start justify-center max-w-2xl"
-          >
-            <h1 className="text-4xl md:text-6xl font-bold text-center md:text-left text-spaceIndigo leading-tight">
-              Vaš partner za savršeno ravne podove
-            </h1>
-            <p className="text-2xl md:text-3xl text-center md:text-left text-bronze">
-              Mašinska izrada podnih glazura
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={reduceMotion ? false : { opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: reduceMotion ? 0 : 0.8, delay: reduceMotion ? 0 : 0.4 }}
-            className="w-[286px] h-[209px] md:w-full md:h-auto max-w-md md:max-w-xl"
-          >
-            <MasinaSvg className="w-full h-full" aria-hidden="true" />
-          </motion.div>
-        </div>
-
-        <motion.a
-          initial={reduceMotion ? false : { opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: reduceMotion ? 0 : 0.5, delay: reduceMotion ? 0 : 0.6 }}
-          {...hoverTap}
-          href="#contact"
-          className="mt-12 text-[16px] md:text-2xl text-mintGrand bg-granite rounded-lg p-3 md:p-4 transition-all cursor-pointer"
-        >
-          Kontaktiraj nas
-        </motion.a>
-      </section>
+      <HeroSection />
 
       <section id="about" className="mt-12 md:mt-24 max-w-5xl mx-auto w-full flex flex-col justify-center items-center px-4">
         <motion.div
@@ -138,6 +104,8 @@ export default function HomePage() {
       </section>
 
       <GallerySection />
+
+      <VideoSection />
 
       <section id="contact" className="mt-24 md:mt-40 w-full py-16 md:py-24 px-4">
         <div className="flex flex-col justify-center items-center mt-3 gap-8 max-w-7xl mx-auto">
