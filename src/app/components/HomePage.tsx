@@ -5,6 +5,7 @@ import HeroSection from "@/app/components/HeroSection";
 import { qaData } from "@/app/data/qaData";
 import QAItem from "@/app/components/QAItem";
 import GallerySection from "@/app/components/GallerySection";
+import BeforeAfterSection from "@/app/components/BeforeAfterSection";
 import VideoSection from "@/app/components/VideoSection";
 import PhoneSvg from "@/app/components/PhoneSvg";
 import ViberSvg from "@/app/components/ViberSvg";
@@ -104,6 +105,8 @@ export default function HomePage() {
       </section>
 
       <GallerySection />
+
+      <BeforeAfterSection />
 
       <VideoSection />
 
