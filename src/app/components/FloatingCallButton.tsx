@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { getHoverTap } from "@/app/lib/motion";
+import { trackContactClick } from "@/app/lib/analytics";
 
 export default function FloatingCallButton() {
   const reduceMotion = useReducedMotion();
@@ -11,6 +12,7 @@ export default function FloatingCallButton() {
     <motion.a
       {...hoverTap}
       href="tel:+38765921847"
+      onClick={() => trackContactClick("phone", "floating")}
       aria-label="Pozovi nas: 065 921 847"
       className="fixed bottom-6 right-4 z-40 md:hidden flex items-center gap-2 bg-granite text-mintGrand font-bold rounded-full px-5 py-3 shadow-lg"
     >

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import PhoneSvg from "@/app/components/PhoneSvg";
 import { getFadeUp, getHoverTap } from "@/app/lib/motion";
+import { trackContactClick } from "@/app/lib/analytics";
 
 const trustSignals = [
   "Besplatna procjena",
@@ -70,6 +71,7 @@ export default function HeroSection() {
               <motion.a
                 {...hoverTap}
                 href="#contact"
+                onClick={() => trackContactClick("contact_cta", "hero")}
                 className="inline-flex items-center justify-center min-h-12 px-6 py-3 text-base md:text-lg font-semibold text-mintGrand bg-granite rounded-xl shadow-md hover:bg-granite/90 transition-colors"
               >
                 Besplatna procjena
@@ -86,6 +88,7 @@ export default function HeroSection() {
             <motion.a
               {...getFadeUp(reduceMotion, 0.3)}
               href="tel:+38765921847"
+              onClick={() => trackContactClick("phone", "hero")}
               className="mt-6 inline-flex items-center gap-2 text-spaceIndigo font-medium hover:text-bronze transition-colors"
               aria-label="Pozovite nas na 065 921 847"
             >

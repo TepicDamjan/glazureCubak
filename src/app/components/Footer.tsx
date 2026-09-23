@@ -1,4 +1,7 @@
 
+"use client";
+
+import { trackContactClick } from "@/app/lib/analytics";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -16,7 +19,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start gap-2">
           <p className="text-base md:text-lg font-bold text-spaceIndigo">Glazure Cubak</p>
-          <a href="tel:+38765921847" className="text-bronze hover:underline">
+          <a
+            href="tel:+38765921847"
+            onClick={() => trackContactClick("phone", "footer")}
+            className="text-bronze hover:underline"
+          >
             065 921 847
           </a>
         </div>

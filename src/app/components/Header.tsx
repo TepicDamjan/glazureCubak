@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { getHoverTap } from "@/app/lib/motion";
+import { trackContactClick } from "@/app/lib/analytics";
 
 const navLinks = [
   { href: "#about", label: "O nama" },
@@ -43,6 +44,7 @@ export default function Header() {
           <motion.a
             {...hoverTap}
             href="tel:+38765921847"
+            onClick={() => trackContactClick("phone", "header")}
             className="hidden md:inline-flex text-sm md:text-lg text-mintGrand bg-granite rounded-lg px-3 py-2 md:px-4 md:py-3 hover:bg-opacity-90 transition-all"
           >
             Pozovi nas

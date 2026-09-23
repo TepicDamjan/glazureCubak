@@ -12,6 +12,7 @@ import FacebookSvg from "@/app/components/FacebookSvg";
 import WhatsAppSvg from "@/app/components/WhatsAppSvg";
 import FloatingCallButton from "@/app/components/FloatingCallButton";
 import { getFadeInView } from "@/app/lib/motion";
+import { trackContactClick } from "@/app/lib/analytics";
 
 const processSteps = [
   {
@@ -127,6 +128,7 @@ export default function HomePage() {
               <motion.a
                 {...(reduceMotion ? {} : { whileHover: { scale: 1.05, x: 10 } })}
                 href="tel:+38765921847"
+                onClick={() => trackContactClick("phone", "contact")}
                 className="flex flex-row items-center justify-start gap-3 w-fit"
                 aria-label="Pozovite nas na 065 921 847"
               >
@@ -139,6 +141,7 @@ export default function HomePage() {
               <motion.a
                 {...(reduceMotion ? {} : { whileHover: { scale: 1.05, x: 10 } })}
                 href="viber://chat?number=38765921847"
+                onClick={() => trackContactClick("viber", "contact")}
                 className="flex flex-row items-center justify-start gap-3 w-fit"
                 aria-label="Kontaktirajte nas putem Vibera"
               >
@@ -153,6 +156,7 @@ export default function HomePage() {
                 href="https://wa.me/38765921847"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackContactClick("whatsapp", "contact")}
                 className="flex flex-row items-center justify-start gap-3 w-fit"
                 aria-label="Kontaktirajte nas putem WhatsApp-a"
               >
@@ -167,6 +171,7 @@ export default function HomePage() {
                 href="https://www.facebook.com/glazureestrih.cubak/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackContactClick("facebook", "contact")}
                 className="flex flex-row items-center justify-start gap-3 w-fit"
                 aria-label="Posjetite našu Facebook stranicu"
               >
